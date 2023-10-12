@@ -1,13 +1,14 @@
 {
     "version": 2,
+    "name":"course",
     "builds": [{
-      "src": "./app.js",
-      "use": "@now/node-server"
+      "src": "app.js",
+      "use": "@vercel/node"
     }],
-    "routes": [{"handle": "filesystem"},
+    "routes": [
       {
-        "src": "/.*",
-        "dest": "server.js"
+        "src": "/(.*)",
+        "dest": "/app.js"
       }
     ]
   }
