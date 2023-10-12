@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>coursehead}}
+
+<script>
+
+    function playVideo() {
+        var videoContainer = document.getElementById("video-container");
+        videoContainer.style.display = "block";
+        var video = document.getElementById("my-video");
+        video.play();
+    }
+</script>
+
+<body>
+    {{>header}}
+    <main>
+        <div class="container my-3">
+            <div class="header">
+                <img class="animated-image" src="HEADER.gif" alt="">
+            </div>
+            <div class="extra-header">
+                <p>Upgrade Skills at AvaIntern</p>
+                <p>Expand your career opportunities</p>
+                <p>Find a Novel method of learning</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>Learn without limits and spread knowledge</p>
+            <p class="basic-info">Build new skills for that "this is my year" feeling with
+
+                courses,certificates, and degrees from world-class
+
+                universities and companies
+            </p>
+            <div class="some-btn" style="display: flex; justify-content: space-around; margin-top: 5%;">
+                <button type="button" class="btn btn-warning"><b><a href="/course">See Courses</a></b></button>
+                <button type="button" class="btn btn-warning" style="color: black;" onclick="playVideo()">
+                    <b>Watch Video</b>
+                </button>
+            </div>
+
+            <div id="video-container" style="display: none;">
+                <iframe id="video-iframe" width="560" height="315"
+                    src="https://res.cloudinary.com/df6f8uemq/video/upload/v1694448970/PROMO-1_cxnk9v.mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329593/xyz/images/slide-1_d2z3xh.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329593/xyz/images/slide-2_acm9vb.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329593/xyz/images/slide-3_pptky1.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329594/xyz/images/slide-4_xfoeiv.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329594/xyz/images/slide-5_o4tmgb.jpg">
+                </div>
+                <div class="slide"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329594/xyz/images/slide-6_tsrsjw.jpg">
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+
+        <div class="partners">
+            <p><b>Our Alumuni Works at</b></p>
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329560/xyz/images/amazon_vjas0j.png"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329597/xyz/images/tcs_wd1tev.webp"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329560/xyz/images/autodesk_qv6asw.png"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329587/xyz/images/paytm_y1e2bb.png"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329598/xyz/images/vvdn_jwgcy4.jpg"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329591/xyz/images/presidio_blrebp.jpg"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329559/xyz/images/acenture_hm00yx.jpg"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329579/xyz/images/google_xxmpqm.avif"
+                    alt="">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329585/xyz/images/myntra_vqvqe6.png"
+                    alt="">
+            </marquee>
+        </div>
+
+        <div class="our_courses">
+            <div class="info-2">
+                <a style="text-decoration: none;color:black;" href="/course">
+                    <h1><b> Our Popular Courses </b> </h1>
+                </a>
+                <div class="btn btn-warning py-3 my-2 mx-1"><a href="/course">Explore courses</a></div>
+            </div>
+            <div class="multiple-cards">
+                <div class="cards">
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329573/xyz/images/courses/full-stack_fm5quj.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> Full Stack Web Development</b></h4> --}}
+                            <p class="card-text">Web development allows you to build attractive, engaging, and
+                                robust
+                                websites.</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/web"> Web
+                                            Development</a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329572/xyz/images/courses/dsa-1_v718r9.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> Data Structure and Algorithms</b></h4> --}}
+                            <p class="card-text">DSA course will you allows to use efficient ways to solve problems.
+                            </p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/dsa"> DSA
+                                        </a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329573/xyz/images/courses/human_dibfdh.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> Human Resources</b></h4> --}}
+                            <p class="card-text">Human resources provides support and management of an
+                                organization's
+                                workforce.</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/human"> Human
+                                            Resource
+                                        </a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329576/xyz/images/courses/UI-UX_et0z7g.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> UI/UX Design</b></h4> --}}
+                            <p class="card-text">UI/UX provides intuitive and appealing design for user-friendly and
+                                delightful user experience.</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/ui-ux"> UI/UX
+                                        </a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329571/xyz/images/courses/digital_yturcc.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b>Digital Marketing</b></h4> --}}
+                            <p class="card-text">Promotes brand, products or services to target audience to achieve
+                                business goals.</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/marketing">
+                                            Digital
+                                            Marketing</a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329571/xyz/images/courses/data-science_sgkq8d.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> Data Science</b></h4> --}}
+                            <p class="card-text">Data science provides solutions by analyzing data using statistical
+                                and
+                                computational methods</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/ds"> Data
+                                            Science</a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329570/xyz/images/courses/cad_ta6hwj.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> AutoCAD</b></h4> --}}
+                            <p class="card-text">It is widely
+                                used in various industries, including architecture, engineering, and construction.
+                            </p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                <button type="button" class="btn btn-warning"><b><a href="/course/cad">
+                                            AutoCad</a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329574/xyz/images/courses/java_cvvtop.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            {{!-- <h4><b> Java Course</b></h4> --}}
+                            <p class="card-text">Learn Java from scratch to advance with basics.</p>
+                            <div class="price" style="display: flex;justify-content: space-between;">
+                                {{!-- <p><b> &#x20b9; 6999</b></p> --}}
+                                <button type="button" class="btn btn-warning"><b><a href="/course/java"> Java
+                                            Course</a></b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="whychooseus">
+            <video id="myVideo" autoplay loop muted>
+                <source
+                    src="https://res.cloudinary.com/df6f8uemq/video/upload/v1694329591/xyz/images/Questions_mxkiuv.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="moto">
+                <p class="heading">
+                    <marquee behavior="alternate" direction="left" scrollamount="3px"> Why Choose Us ?</marquee>
+                </p>
+                <p>Ava Intern is a rapidly growing training innovation
+                    company that provides a significant number of elearning
+                    arrangements for the global market under one
+                    roof. Our organization has been created with the aim of
+                    assisting individuals in realizing their full potential by
+                    providing entirely flexible, top-to-bottom, and
+                    comprehensive learning opportunities. The best
+                    learning benefits which make us different from others
+                    are our project based tasks along with internship
+                    experiences which students get while doing the courses.</p>
+            </div>
+        </div>
+
+        {{!-- Scroll features for facility--}}
+
+        <marquee behavior="scroll" direction="left">
+            <b class="facility-heading"> The Optimal Platform for Beginning Your Career Journey.</b>
+        </marquee>
+        <div class="facility">
+            <div class="image-wrapper">
+                <a href="#"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329595/xyz/images/slide-lower-1_dkdgks.jpg"
+                        alt="2">Certification</a>
+                <a href="/placement"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329595/xyz/images/slide-lower-2_vrvnw9.jpg"
+                        alt="1">Placement Cell</a>
+                <a href="#"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329596/xyz/images/slide-lower-3_zzotlf.jpg"
+                        alt="3">Industrial Experience</a>
+                <a href="/course"><img
+                        src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329596/xyz/images/slide-lower-4_w78m2o.jpg"
+                        alt="4">Courses</a>
+            </div>
+        </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-warning mx-3 my-3 " id="left-button"><b><b><span style="font-weight: bold;">
+                            < </span> </b>
+                </b> </button>
+            <button id="right-button" class="btn btn-warning mx-3 my-3 "><b><b>
+                        > </b>
+                </b></button>
+        </div>
+
+
+        <div class="review-slider">
+            <h1>Some Earning from our students.</h1>
+            <div class="reviews">
+                <div class="review active">
+                    <p class="text">I recently completed a course with you and I have to say, it was one of the best
+                        learning experiences I've ever had. The course material was so well-organized and easy to
+                        understand, and the instructors were incredibly knowledgeable and supportive.</p>
+                    <div class="rating">4.5 &#11088;</div>
+                    <p class="author">Rahul Suman</p>
+                </div>
+                <div class="review">
+                    <p class="text">"I just completed your course and I wanted to reach out and say thank you. Your
+                        dedication to providing the highest-quality education and support is truly inspiring. The
+                        material was well-organized and easy to follow, and the instructors were knowledgeable, patient,
+                        and understanding. I feel like I've gained so much from this experience and I'm excited to apply
+                        my new skills to my work."</p>
+                    <div class="rating">3.8 &#11088;</div>
+                    <p class="author">Mukesh Yadav</p>
+                </div>
+                <div class="review">
+                    <p class="text">"I can't say enough good things about your course. From the moment I signed up, I
+                        felt like I was in good hands. The support team was responsive and helpful, and the instructors
+                        were top-notch. The content was challenging but engaging, and I feel like I've grown so much as
+                        a learner as a result. Thank you for all the hard work and dedication that went into creating
+                        this course."</p>
+                    <div class="rating">4.2 &#11088;</div>
+                    <p class="author">Ranjeet Yadav</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="page-btn active"></button>
+                <button class="page-btn"></button>
+                <button class="page-btn"></button>
+            </div>
+        </div>
+
+        <div class="extra">
+            <div class="img">
+                <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329586/xyz/images/p2_ljajtb.jpg"
+                    alt="Loading...">
+            </div>
+            <div class="info-3">
+                <h2>Learner outcomes through our awesome platform</h2>
+                <p>Gain mastery in various programming languages, frameworks, and tools.</p>
+                <p>Receive support and guidance from mentors throughout your learning journey</p>
+                <p>
+                    <br>
+                    Lesson impact Report
+                </p>
+                {{!--
+                <button type="button" class="btn btn-warning"><b><a href="/signup"> Sign
+                            Up</a></b></button> --}}
+
+            </div>
+        </div>
+
+
+        <div id="slideshow">
+            <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694449686/plan-1-1_xfqskz.jpg">
+            <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694450899/plan-2-1_vy9n7y.jpg">
+            <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694450698/plan-3-1_mnwy3l.jpg">
+            <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329590/xyz/images/plan-4_ao1f34.jpg">
+        </div>
+
+
+        <div class="ourmentor">
+            <h1 style="text-align: center;color:rgb(247, 83, 54);font-size:50px"><b><b class="gradient-text">Our
+                        Mentor</b></b></h1>
+            <hr>
+            <hr>
+            <hr>
+            <br>
+            <div class="mentor">
+                <p> Our Mentors at Ava Intern are industry experts who bring years of experience and valuable insight to
+                    the classroom. They adopt a personalized approach to suit every student’s needs, accentuating the
+                    strengths and addressing any weaknesses. Our mentors encourage active participation in class by
+                    encouraging questions and offering feedback after every lecture. We believe that by the end of your
+                    course you will have not only the theoretical understanding but an excellent proficiency in skills
+                    required to succeed in your field. </p>
+            </div>
+            <br>
+        </div>
+        <div class="provide">
+            <div class="provide-content">
+                <p>We are dedicated to enriching your knowledge through our platform. <span
+                        class="gradient-text">AvaIntern</span></p>
+                <div class="img">
+                    <img data-src="/THUMB.gif" alt="Loading...">
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h1 style="text-align: center;"><b><b class="gradient-text">About Us</b></b></h1>
+            <hr>
+            <hr>
+            <hr>
+            <li>Ava Intern is an Online learning platform
+                that provides students a holistic learning
+                experience to help make them industryready.</li>
+            <li>With access to the Industry Experts, Online
+                Courses and blended learning, it allows
+                students to Learn beyond Expectations.</li>
+            <li>AvaIntern bridge the gap between classroom
+                and workplace with our flagship Training -
+                cum- Internship Programs.</li>
+        </div>
+
+        <div class="course-benefit my-4 py-2">
+            {{!-- <div class="img">
+                <img data-src="benefits.webp" alt="1">
+            </div> --}}
+            <div class="benefits">
+                <div class="blocks">
+                    <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329584/xyz/images/mentor_tlb1jq.jpg"
+                        alt="">
+                    <h1><b>Our Experts</b></h1>
+                    <p>Experts mentor offers guidance, feedback, and expertise to help mentees develop skills and
+                        advance their careers. They inspire, motivate, and empower individuals to reach their full
+                        potential.</p>
+                </div>
+                <div class="blocks">
+                    <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329567/xyz/images/certificate_sfgwti.jpg"
+                        alt="">
+                    <h1><b>Placement cell</b></h1>
+                    <p>Our Placement Cell is always working to provide students with access to top-tier internship and
+                        placement opportunities outside of campus, so you can build your skills and grow your career.
+                    </p>
+                </div>
+                <div class="blocks">
+                    <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329587/xyz/images/placement-cell_iaf6tm.jpg"
+                        alt="">
+                    <h1><b>Internship & Projects</b></h1>
+                    <p>Internships and projects provide practical experience and skills, helping individuals build
+                        networks, showcase abilities, and potentially secure job offers.</p>
+                </div>
+                <div class="blocks">
+                    <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329583/xyz/images/live_m9cf4w.jpg"
+                        alt="">
+                    <h1><b>Live Training</b></h1>
+                    <p>The mentors of the respective courses conduct live training sessions to provide hands-on learning
+                        experience.</p>
+                </div>
+                <div class="blocks">
+                    <img data-src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329597/xyz/images/support_bxecqq.jpg"
+                        alt="">
+                    <h1><b>24/7 Support</b></h1>
+                    <p>Hired a team of customer service representatives who can work in shifts to provide support around
+                        the clock. Ensure that they are well-trained and equipped with the necessary tools and
+                        information to handle customer queries and issues..</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="number">
+            <div class="1">
+                <div class="data">
+                    <span class="counter1">10000</span>
+                    <span>+</span>
+                </div>
+                <p>Enrollment</p>
+            </div>
+            <div class="2">
+                <div class="data">
+                    <span class="counter2">500</span>
+                    <span>+</span>
+                </div>
+                <p>Project Reviews</p>
+            </div>
+            <div class="3">
+                <div class="data">
+                    <span class="counter3">35000</span>
+                    <span>+</span>
+                </div>
+                <p>Viewers</p>
+            </div>
+        </div>
+    </main>
+    {{>footer}}
+    <script src="index.js">
+    </script>
+
+</body>
+
+</html>

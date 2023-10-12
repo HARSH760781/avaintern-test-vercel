@@ -1,0 +1,56 @@
+<script>
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            evt.preventDefault();
+            return false;
+        }
+        return true;
+    }
+</script>
+<div class="form" id="form">
+    <h2>Fill out the form </h2>
+    {{!--
+    <hr>
+    <hr>
+    <hr> --}}
+    <form action="/thanku" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" name="fullname">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
+                required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="Select" selected="true">Select</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Web Development">AutoCAD</option>
+                <option value="Web Development">Java Course</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Finance">Finance</option>
+                <option value="Finance">VLSI</option>
+                <option value="Human Resource">Human Resource</option>
+                <option value="Business Analytics">Business Analytics</option>
+                <option value="UI/Ux Design">UI/Ux Design</option>
+                <option value="DSA">DSA</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" name="mobile" pattern="[0-9]{10}"
+                onkeypress="return isNumberKey(event)" maxlength="10" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleCheck1">College</label>
+            <input type="text" class="form-control" name="college">
+        </div>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>coursehead}}
+
+
+<body>
+
+    {{>header}}
+    <main>
+        <div class="contact">
+            <img src="https://res.cloudinary.com/df6f8uemq/image/upload/v1695295940/SUPPORT_omoewl.jpg"
+                alt="Loading...">
+        </div>
+        <div class="my-form">
+            <div class="extra-connections">
+                <h1><b>Follow Us</b></h1>
+                <div class="links">
+                    <a href="https://www.linkedin.com/company/ava-intern/"><img
+                            src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329582/xyz/images/linked_xzxlvx.png"
+                            alt=""></a>
+                    <a href="https://instagram.com/ava_intern?igshid=YmMyMTA2M2Y="><img
+                            src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329581/xyz/images/insta_vbipvu.jpg"
+                            alt=""></a>
+                    <a href="mailto:support@avaintern.com"><img
+                            src="https://res.cloudinary.com/df6f8uemq/image/upload/v1694329577/xyz/images/email_fv68wg.avif"
+                            alt=""></a>
+                </div>
+            </div>
+            <form action="/contact" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" name="fullname">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" name="mobile" pattern="[0-9]{10}" maxlength="10" required>
+                    <div id="numberHelp" class="form-text">We'll call you soon!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputMessage" class="form-label">Message</label>
+                    <input type="text" class="form-control" name="message">
+                </div>
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    {{>footer}}
+</body>
+
+</html>
